@@ -61,6 +61,18 @@
 	  <None Remove="Resources\Images\bct3.jpg" />
 	  <None Remove="Resources\Images\bct4.jpg" />
 	  <None Remove="Resources\Images\dk.jpg" />
+	  <None Remove="Resources\Images\newkorm1.jpg" />
+	  <None Remove="Resources\Images\newkorm2.jpg" />
+	  <None Remove="Resources\Images\newkorm3.jpg" />
+	  <None Remove="Resources\Images\newkorm4.jpg" />
+	  <None Remove="Resources\Images\osoben1.jpg" />
+	  <None Remove="Resources\Images\osoben2.jpg" />
+	  <None Remove="Resources\Images\osoben3.jpg" />
+	  <None Remove="Resources\Images\osoben4.jpg" />
+	  <None Remove="Resources\Images\typekorm1.jpg" />
+	  <None Remove="Resources\Images\typekorm2.jpg" />
+	  <None Remove="Resources\Images\typekorm3.jpg" />
+	  <None Remove="Resources\Images\typekorm4.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
