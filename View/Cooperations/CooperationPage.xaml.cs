@@ -1,5 +1,6 @@
 using CatsJournal.Model;
 using CatsJournal.View.Cooperation;
+using CatsJournal.ViewModel;
 
 namespace CatsJournal.View.Cooperation;
 
@@ -8,7 +9,8 @@ public partial class CooperationPage : ContentPage
 	public CooperationPage()
 	{
 		InitializeComponent();
-        BindingContext = CooperationRepo.AllCooperation;
+        CooperationViewModel cooperationViewModel = new CooperationViewModel();
+        BindingContext = cooperationViewModel;
     }
 
     private void coopList_ItemSelected(object sender, SelectedItemChangedEventArgs e)

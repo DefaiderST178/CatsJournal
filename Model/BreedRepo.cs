@@ -1,4 +1,5 @@
-﻿namespace CatsJournal.Model
+﻿
+namespace CatsJournal.Model
 {
     public class BreedRepo
     {
@@ -1046,5 +1047,10 @@
                  
             },
         };
+
+        public List<Breed> GetAllBreeds()
+        {
+            return AllBreeds;
+        }
     }
 }

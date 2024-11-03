@@ -9,7 +9,7 @@
                 <Label Text="Все породы" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
             </Frame>
 
-            <ListView ItemsSource="{Binding}" x:Name="breedsList" ItemSelected="OnItemSelected" HasUnevenRows="True" >
+            <ListView ItemsSource="{Binding Breeds}" x:Name="breedsList" ItemSelected="OnItemSelected" HasUnevenRows="True" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

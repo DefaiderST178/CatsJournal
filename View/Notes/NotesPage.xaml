@@ -9,7 +9,7 @@
                 <Label Text="Интересные заметки" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
             </Frame>
 
-            <ListView ItemsSource="{Binding}" x:Name="notesList" ItemSelected="notesList_ItemSelected" HasUnevenRows="True" >
+            <ListView ItemsSource="{Binding Notes}" x:Name="notesList" ItemSelected="notesList_ItemSelected" HasUnevenRows="True" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

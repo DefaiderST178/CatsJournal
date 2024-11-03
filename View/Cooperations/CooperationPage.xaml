@@ -9,7 +9,7 @@
                 <Label Text="Наши партнеры" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
             </Frame>
 
-            <ListView x:Name="coopList" ItemsSource="{Binding}" ItemSelected="coopList_ItemSelected" HasUnevenRows="True">
+            <ListView x:Name="coopList" ItemsSource="{Binding Cooperations}" ItemSelected="coopList_ItemSelected" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

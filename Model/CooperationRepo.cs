@@ -34,5 +34,10 @@ namespace CatsJournal.Model
                 Website = "Отсутствует"
             },
         };
+
+        public List<Cooperation> GetAllBreeds()
+        {
+            return AllCooperation;
+        }
     }
 }

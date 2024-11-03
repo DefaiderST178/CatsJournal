@@ -1,4 +1,5 @@
 using CatsJournal.Model;
+using CatsJournal.ViewModel;
 
 namespace CatsJournal.View.AllCats;
 
@@ -7,7 +8,8 @@ public partial class AllCatsBreeds : ContentPage
 	public AllCatsBreeds()
 	{
 		InitializeComponent();
-        BindingContext = BreedRepo.AllBreeds;
+        BreedViewModel breedViewModel = new BreedViewModel();
+        BindingContext = breedViewModel;
     }
     private void OnItemSelected(object sender, SelectedItemChangedEventArgs e) // обработка нажатия элемента в списке
     {
