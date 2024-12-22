@@ -7,13 +7,13 @@
     <ScrollView>
         <StackLayout Style="{StaticResource MainStack}">
             <Frame Style="{StaticResource BlyFrame}">
-                <Label Text="{Binding BreedsName}" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
+                <Label Text="{Binding BreedsName}" x:Name="BreedTB" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
             </Frame>
 
             <Frame Style="{StaticResource MainFrame}">
                 <StackLayout>
-                    <Label Text="Описание" Style="{StaticResource BoldText}"/>
-                    <Label Text="{Binding BreedsDescr}"  />
+                    <Label Text="Описание" Style="{StaticResource BoldText}" />
+                    <Label Text="{Binding BreedsDescr}" x:Name="DescriptionTB"/>
                 </StackLayout>
             </Frame>
 
@@ -78,9 +78,16 @@
                 <Image Source="{Binding BreedsImages[4]}" />
             </Frame>
 
-            <Button x:Name="Back" Text="Назад" Clicked="Back_Clicked" BackgroundColor="#E6E6FF" Margin="10"
-                    FontSize="16" TextColor="Black" HorizontalOptions="Start"
-                    HeightRequest="50" WidthRequest="150"/>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button x:Name="Back" Text="Назад" Clicked="Back_Clicked" BackgroundColor="#E6E6FF" Margin="10"
+        FontSize="16" TextColor="Black" HorizontalOptions="Start"
+        HeightRequest="50" WidthRequest="120"/>
+
+                <Button x:Name="ShareBtn" Text="Поделиться" Clicked="ShareBtn_Clicked" 
+        BackgroundColor="#E6E6FF" Margin="10" FontSize="16" TextColor="Black" 
+        HorizontalOptions="Start" HeightRequest="50" WidthRequest="180"/>
+            </HorizontalStackLayout>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>
