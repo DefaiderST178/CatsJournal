@@ -7,6 +7,7 @@
     xmlns:local2="clr-namespace:CatsJournal.View.AllCats"
     xmlns:local3="clr-namespace:CatsJournal.View.Notes"
     xmlns:local4="clr-namespace:CatsJournal.View.Cooperation"
+    xmlns:local5="clr-namespace:CatsJournal.View.Tests"
     Shell.FlyoutBehavior="Disabled">
 
     <TabBar>
@@ -18,6 +19,9 @@
         </Tab>
         <Tab Title="Заметки" Icon="notespage.svg">
             <ShellContent ContentTemplate="{DataTemplate local3:NotesPage}" Route="NotesPage" />
+        </Tab>
+        <Tab Title="Тесты" Icon="test.svg">
+            <ShellContent ContentTemplate="{DataTemplate local5:TestsPage}" Route="TestsPage" />
         </Tab>
         <Tab Title="Партнеры" Icon="vetpage.svg">
             <ShellContent ContentTemplate="{DataTemplate local4:CooperationPage}" Route="CooperationPage" />

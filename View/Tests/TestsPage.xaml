@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CatsJournal.View.Tests.TestsPage">
+
+    <ScrollView>
+        <StackLayout Style="{StaticResource MainStack}">
+            <Frame Style="{StaticResource BlyFrame}">
+                <Label Text="Угадай породу" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}"/>
+            </Frame>
+
+            <ListView ItemsSource="{Binding}" x:Name="TestList" ItemSelected="TestList_ItemSelected" HasUnevenRows="True" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+
+                                <Frame Style="{StaticResource MainFrame}" CornerRadius="10" Padding="10" Margin="7,5,10,5">
+                                    <Label Grid.Column="1" Text="{Binding QuestName}" FontSize="16" VerticalOptions="Center" />
+                                </Frame>
+
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

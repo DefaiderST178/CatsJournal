@@ -1,5 +1,4 @@
-﻿
-namespace CatsJournal.Model
+﻿namespace CatsJournal.Model
 {
     public class BreedRepo
     {
