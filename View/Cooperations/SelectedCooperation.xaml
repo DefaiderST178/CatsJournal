@@ -23,7 +23,7 @@
                         <Label Text="Адрес:" Grid.Row="0" Grid.Column="0"  />
                         <Label Text="Телефон:" Grid.Row="1" Grid.Column="0"  />
 
-                        <Label Text="{Binding Address}" Grid.Row="0" Grid.Column="1" />
+                        <Label Text="{Binding Address}" Grid.Row="0" Grid.Column="1" x:Name="AddressLabel"/>
                         <Label Text="{Binding Phone}" Grid.Row="1" Grid.Column="1" />
                     </Grid>
                 </StackLayout>
@@ -36,9 +36,16 @@
                 </StackLayout>
             </Frame>
 
-            <Button x:Name="Back" Text="Назад" Clicked="Back_Clicked" BackgroundColor="#E6E6FF" Margin="10"
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button x:Name="Back" Text="Назад" Clicked="Back_Clicked" BackgroundColor="#E6E6FF" Margin="10"
                     FontSize="16" TextColor="Black" HorizontalOptions="Start"
-                    HeightRequest="50" WidthRequest="150"/>
+                    HeightRequest="50" WidthRequest="120"/>
+
+                <Button x:Name="OpenMapBtn" Text="Показать" Clicked="OpenMapBtn_Clicked" 
+                    BackgroundColor="#E6E6FF" Margin="10" FontSize="16" TextColor="Black" 
+                    HorizontalOptions="Start" HeightRequest="50" WidthRequest="180"/>
+            </HorizontalStackLayout>
+            
         </StackLayout>
     </ScrollView>
 </ContentPage>

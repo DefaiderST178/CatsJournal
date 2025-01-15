@@ -64,4 +64,9 @@ public partial class SelectedTest : ContentPage
             ResultTB.Text = "Вы не угадали это " + breed4;
         }
     }
+
+    private async void Back_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
+    }
 }

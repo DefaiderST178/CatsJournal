@@ -8,6 +8,7 @@ namespace CatsJournal.Model
 {
     public class Cooperation
     {
+        public int Id { get; set; } // id
         public string Name { get; set; } // С кем сотрудничаем (наименование)
         public string Description { get; set; } // кратко описать
         public string Address { get; set; } // адрес
